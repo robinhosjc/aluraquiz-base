@@ -5,7 +5,7 @@ const Widget = styled.div`
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => theme.colors.mainBg};
-  border-radius: 4px;
+  border-radius: ${({ theme }) => theme.borderRadius};
   overflow: hidden;
 
   h1, h2, h3 {
@@ -13,12 +13,35 @@ const Widget = styled.div`
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
+    color: ${({ theme }) => theme.colors.secondary};    
   }
   p {
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
+    color: ${({ theme }) => theme.colors.contrastTextGray}
   }
+  input {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    border: 1px solid ${({ theme }) => theme.colors.gray_100};
+    border-radius: ${({ theme }) => theme.borderRadius};    
+  }
+
+  button:enabled {
+    background-color: ${({ theme }) => theme.colors.pink_100};
+  }
+  button {
+    margin-top: 20px;
+    cursor: pointer;
+    padding: .655rem .75rem;
+    width: 100%;
+    color: #fff;
+    border: none;
+    border-radius: ${({ theme }) => theme.borderRadius};  
+  }
+
 `;
 
 Widget.Header = styled.header`
@@ -34,6 +57,7 @@ Widget.Header = styled.header`
 `;
 
 Widget.Content = styled.div`
+  background-color: ${({ theme }) => theme.colors.purple};
   padding: 24px 32px 32px 32px;
   & > *:first-child {
     margin-top: 0;
@@ -46,5 +70,6 @@ Widget.Content = styled.div`
     padding: 0;
   }
 `;
+
 
 export default Widget;

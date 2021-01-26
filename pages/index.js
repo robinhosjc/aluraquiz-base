@@ -10,13 +10,6 @@ import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 
-// const BackgroundImage = styled.div`
-//   background-image: url(${db.bg});
-//   flex: 1;
-//   background-size: cover;
-//   background-position: center;
-// `;
-
 export const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
@@ -41,9 +34,14 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>The legend of zelda</h1>
+            <h1>Premier League Quiz</h1>
           </Widget.Header>
           <Widget.Content>
+            <p>
+              Teste seus conhecimentos sobre o maior campeonato de Futebol do planeta, 
+              a Premier League, primeira divisão do futebol inglês!
+            </p>
+
             <form onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
@@ -53,30 +51,28 @@ export default function Home() {
               <input
                 onChange={function (infosDoEvento) {
                   console.log(infosDoEvento.target.value);
-                  // State
-                  // name = infosDoEvento.target.value;
                   setName(infosDoEvento.target.value);
                 }}
                 placeholder="Diz ai seu nome"
               />
               <button type="submit" disabled={name.length === 0}>
-                Jogar
-                {name}
+                Jogar {name}
               </button>
             </form>
           </Widget.Content>
         </Widget>
 
         <Widget>
-          <Widget.Content>
+          <Widget.Header>
             <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
+          </Widget.Header>
+          <Widget.Content>
+            <p>Em breve!</p>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/omariosouto" />
+      <GitHubCorner projectUrl="https://github.com/robinhosjc" />
     </QuizBackground>
   );
 }

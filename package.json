@@ -1,5 +1,5 @@
 {
-  "name": "aluraquiz-base",
+  "name": "plquiz",
   "version": "1.0.1",
   "scripts": {
     "dev": "next",
