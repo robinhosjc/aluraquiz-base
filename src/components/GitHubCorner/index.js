@@ -1,4 +1,3 @@
-// src/components/GitHubCorner/index.js
 import React from 'react';
 import styled from 'styled-components';
 
@@ -11,8 +10,8 @@ const Wrapper = styled.div`
 `;
 
 const SVGWrapper = styled.svg`
-  fill: ${({ theme }) => theme.colors.secondary};
-  color: ${({ theme }) => theme.colors.contrastText};
+  fill: ${({ theme }) => theme.colors.pink_100};
+  color: ${({ theme }) => theme.colors.secondary};
   cursor: pointer;
   &:hover .octo-arm{
     animation:octocat-wave 560ms ease-in-out
@@ -32,7 +31,6 @@ const SVGWrapper = styled.svg`
   }
 `;
 
-// eslint-disable-next-line react/prop-types
 export default function GitHubCorner({ projectUrl }) {
   return (
     <Wrapper>

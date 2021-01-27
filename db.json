@@ -1,5 +1,5 @@
 {
-  "bg": "%PUBLIC_URL%/public/img/bg-premier-league.png",
+  "bg": "/public/img/bg-premier-league.png",
   "title": "Quiz CSS da Alura",
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
   "questions": [
