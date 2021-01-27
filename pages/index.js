@@ -28,7 +28,8 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>AluraQuiz - Modelo Base</title>
+        <title>Premier League Quiz - AluraQuiz</title>
+        <meta property="og:image" content="./img/bg-premier-league.png"></meta>
       </Head>
       <QuizContainer>
         <QuizLogo />
