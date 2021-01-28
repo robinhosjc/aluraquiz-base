@@ -41,6 +41,7 @@
       "purple": "#540141",
       "pink_100": "#ff015b",
       "gray_100": "#CED4DA",
+      "white" : "#FFF",
 
       "wrong": "#FF5722",
       "success": "#4CAF50"

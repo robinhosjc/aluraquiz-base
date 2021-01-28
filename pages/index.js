@@ -9,6 +9,7 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Button from '../src/components/Button';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -29,7 +30,6 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>Premier League Quiz - AluraQuiz</title>
-        <meta property="og:image" content="./img/bg-premier-league.png"></meta>
       </Head>
       <QuizContainer>
         <QuizLogo />
@@ -54,11 +54,13 @@ export default function Home() {
                   console.log(infosDoEvento.target.value);
                   setName(infosDoEvento.target.value);
                 }}
+                maxLength="25"
                 placeholder="Diz ai seu nome"
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar {name}
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                JOGAR {name}
+              </Button>
+             
             </form>
           </Widget.Content>
         </Widget>

@@ -28,20 +28,6 @@ const Widget = styled.div`
     border: 1px solid ${({ theme }) => theme.colors.gray_100};
     border-radius: ${({ theme }) => theme.borderRadius};    
   }
-
-  button:enabled {
-    background-color: ${({ theme }) => theme.colors.pink_100};
-  }
-  button {
-    margin-top: 20px;
-    cursor: pointer;
-    padding: .655rem .75rem;
-    width: 100%;
-    color: #fff;
-    border: none;
-    border-radius: ${({ theme }) => theme.borderRadius};  
-  }
-
 `;
 
 Widget.Header = styled.header`
