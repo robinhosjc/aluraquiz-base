@@ -21,13 +21,6 @@ const Widget = styled.div`
     line-height: 1;
     color: ${({ theme }) => theme.colors.contrastTextGray}
   }
-  input {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    border: 1px solid ${({ theme }) => theme.colors.gray_100};
-    border-radius: ${({ theme }) => theme.borderRadius};    
-  }
 `;
 
 Widget.Header = styled.header`
