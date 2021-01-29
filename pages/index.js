@@ -7,21 +7,11 @@ import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
+import QuizContainer from '../src/components/QuizContainer';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import Button from '../src/components/Button';
 import Input from '../src/components/Input';
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
 
 export default function Home() {
   const router = useRouter();
@@ -31,6 +21,7 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>Premier League Quiz - AluraQuiz</title>
+        <link rel="icon" href={`${db.favicon}`} />
       </Head>
       <QuizContainer>
         <QuizLogo />
@@ -55,9 +46,10 @@ export default function Home() {
                 onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
                 placeholder="Diz ai seu nome"
                 value={name}
+                maxLength="25"
               />
               <Button type="submit" disabled={name.length === 0}>
-                JOGAR {name}
+                {`JOGAR ${name}`}
               </Button>
              
             </form>

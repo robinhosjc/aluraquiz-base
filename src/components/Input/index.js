@@ -9,18 +9,14 @@ const InputBase = styled.input`
     border: 1px solid ${({ theme }) => theme.colors.gray_100};
     border-radius: ${({ theme }) => theme.borderRadius};
 `;
-
 export default function Input({ onChange, placeholder, ...props }) {
-  return (
-    <div>
+  return (    
       <InputBase
-        maxLength="25"
         placeholder={placeholder}
         onChange={onChange}
         // eslint-disable-next-line react/jsx-props-no-spreading
         {...props}
-      />
-    </div>
+      />    
   );
 }
 

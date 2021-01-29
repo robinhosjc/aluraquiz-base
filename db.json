@@ -1,7 +1,8 @@
 {
-  "bg": "/public/img/bg-premier-league.png",
+  "bg": "./img/bg-premier-league.png",
   "title": "Quiz CSS da Alura",
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "favicon": "./img/favicon.ico",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -22,6 +23,8 @@
       "answer": 0,
       "alternatives": [
          "background: linear-gradient(#e66465, #9198e5);",
+         "background: gradient(#e66465, #9198e5);",
+         "background: gradient(#e66465, #9198e5);",
          "background: gradient(#e66465, #9198e5);"
       ]
     }
