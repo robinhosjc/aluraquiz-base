@@ -13,13 +13,19 @@ const Widget = styled.div`
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
-    color: ${({ theme }) => theme.colors.secondary};    
+    color: ${({ theme }) => theme.colors.white};
+  }
+  h1 {
+    color: ${({ theme }) => theme.colors.secondary};
   }
   p {
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
     color: ${({ theme }) => theme.colors.contrastTextGray}
+  }
+  input:radio {
+    background-color: ${({ theme }) => theme.colors.pink_100};
   }
 `;
 

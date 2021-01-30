@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:url" content="https://plquiz.roobinho.vercel.app/"></meta>
         <meta property="og:title" content="Premier League Quiz - AluraQuiz"></meta>
         <meta property="og:description" content="Projeto construido durante a Imersão React edição NextJS da Alura!"></meta>
-        <meta property="og:image" content="./img/bg-premier-league.png"></meta>
+        <meta property="og:image" content={`${db.bg}`}></meta>
 
       </Head>
       <ThemeProvider theme={theme}>

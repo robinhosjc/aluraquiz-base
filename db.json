@@ -1,31 +1,31 @@
 {
   "bg": "./img/bg-premier-league.png",
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "title": "Quiz sobre a Premier League",
+  "description": "Teste os seus conhecimentos sobre a Premier League, primeira divisão do futebol Inglês!",
   "favicon": "./img/favicon.ico",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "image": "./img/img-quiz-001.jpg",
+      "title": "Quem foi o ultimo campeão da Premier League (temporada 2019/20)?",
+      "description": "Atual para facilitar.",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Leicester City",
+        "Manchester United",
+        "Liverpool",
+        "Manchester City"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
+      "image": "./img/img-quiz-002.jpg",
+      "title": "O campeonato inglês teve sua primeira temporada disputada entre os anos 1888 e 1889, qual time venceu essa esse torneio?",
+      "description": "Em 1888/89 ainda era conhecido como Football League.",
+      "answer": 2,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Sunderland",
+         "Aston Villa",
+         "Preston North End",
+         "Sheffield United"
       ]
     }
   ],
