@@ -18,14 +18,50 @@
     },
     {
       "image": "./img/img-quiz-002.jpg",
-      "title": "O campeonato inglês teve sua primeira temporada disputada entre os anos 1888 e 1889, qual time venceu essa esse torneio?",
-      "description": "Em 1888/89 ainda era conhecido como Football League.",
-      "answer": 2,
+      "title": "O campeonato inglês teve sua primeira edição disputada entre os anos 1888 e 1889, qual time venceu essa temporada?",
+      "description": "Em 1888/89 era conhecido como Football League, e não Premier League.",
+      "answer": 3,
       "alternatives": [
          "Sunderland",
+         "Aston Villa",         
+         "Sheffield United",
+         "Preston North End"
+      ]
+    },
+    {
+      "image": "./img/img-quiz-003.jpg",
+      "title": "Qual time fez a maior quantia de gols em uma mesma temporada na Premier League?",
+      "description": "Esse record é da temporada 2017/18, e o clube fez 106 gols.",
+      "answer": 0,
+      "alternatives": [
+         "Manchester City",
          "Aston Villa",
-         "Preston North End",
-         "Sheffield United"
+         "Chelsea",
+         "Derby County"
+      ]
+    },
+    {
+      "image": "./img/img-quiz-004.jpg",
+      "title": "O atacante Roberto Firmino, jogador do Liverpool, é o brasileiro com mais gols marcados na Premier League até o momentos, quantos tentos o atacante já marcou?",
+      "description": "Contando apenas gols pela Premier League.",
+      "answer": 3,
+      "alternatives": [
+         "101 gols",
+         "15 gols",
+         "25 gols",
+         "63 gols"
+      ]
+    },
+    {
+      "image": "./img/img-quiz-005.jpg",
+      "title": "O brasileiro Gabriel Jesus, hoje brilha nos gramados na inglaterra, jogando pelo Manchester City, foi jogador da base de qual time brasileiro?",
+      "description": "Ainda nas caterorias de base desse clube, fez 37 gols em 22 jogos em um tornio SUB-17.",
+      "answer": 2,
+      "alternatives": [
+         "Cruzeiro",
+         "Grêmio",
+         "Palmeiras",
+         "Bragantino"
       ]
     }
   ],
@@ -37,15 +73,12 @@
       "primary": "#00ff87",
       "secondary":  "#302446",
       "white" : "#FFF",
-
       "mainBg": "#302446",
       "contrastText": "#FFF",
-      "contrastTextGray": "#CCC",
-      
+      "contrastTextGray": "#CCC",      
       "purple_100": "#540141",
       "pink_100": "#ff015b",
       "gray_100": "#CED4DA",
-
       "wrong": "#FF5722",
       "success": "#4CAF50"
     },

@@ -127,8 +127,6 @@ function QuestionWidget({
               Confirmar
             </Button>
 
-            <p>{selectedAlternative}</p>
-
             {isQuestionSubmited && isCorrect && <p>Acertou!</p>}
             {isQuestionSubmited && !isCorrect && <p>Errou!</p>}
 
@@ -179,12 +177,11 @@ export default function PageQuiz() {
   return (
     <QuizBackground backgroundImage={db.bg}>
 
-      <Link href="/">
-        <a>Voltar Para Home</a>
-      </Link>
-      
       <QuizContainer>
         <QuizLogo />
+        <Link href="/">
+          <a>Voltar Para Home</a>
+        </Link>
 
         { screenState === screenStates.QUIZ && (
           <QuestionWidget 
