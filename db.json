@@ -36,15 +36,15 @@
     "colors": {
       "primary": "#00ff87",
       "secondary":  "#302446",
+      "white" : "#FFF",
 
       "mainBg": "#302446",
       "contrastText": "#FFF",
       "contrastTextGray": "#CCC",
       
-      "purple": "#540141",
+      "purple_100": "#540141",
       "pink_100": "#ff015b",
       "gray_100": "#CED4DA",
-      "white" : "#FFF",
 
       "wrong": "#FF5722",
       "success": "#4CAF50"

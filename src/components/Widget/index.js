@@ -24,9 +24,6 @@ const Widget = styled.div`
     line-height: 1;
     color: ${({ theme }) => theme.colors.contrastTextGray}
   }
-  input:radio {
-    background-color: ${({ theme }) => theme.colors.pink_100};
-  }
 `;
 
 Widget.Header = styled.header`
@@ -42,7 +39,6 @@ Widget.Header = styled.header`
 `;
 
 Widget.Content = styled.div`
-  background-color: ${({ theme }) => theme.colors.purple};
   padding: 24px 32px 32px 32px;
   & > *:first-child {
     margin-top: 0;
@@ -73,6 +69,5 @@ Widget.Topic = styled.a`
     opacity: .5;
   }
 `;
-
 
 export default Widget;

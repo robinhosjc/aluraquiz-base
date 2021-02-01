@@ -13,6 +13,32 @@ import GitHubCorner from '../src/components/GitHubCorner';
 import Button from '../src/components/Button';
 import AlternativesForm from '../src/components/AlternativesForm';
 
+
+function ResultWidget({ results }) {
+  return (
+    <Widget>
+      <Widget.Header>
+        Resultado
+      </Widget.Header>
+      <Widget.Content>
+        <p>Você Acertou
+        {' '}
+        {results.filter((x) => x).length}
+        {' '}
+        perguntas</p>
+        <ul>
+          {results.map((result, index) => 
+            <li key={`result__${result}`}>
+              #{index+1}{' '}
+              {result === true ? 'ACERTOU' : 'ERROU'}
+            </li>
+          )}
+        </ul>
+      </Widget.Content>
+    </Widget>
+  );
+}
+
 function LoadingWidget() {
   return (
     <Widget>
@@ -61,25 +87,28 @@ function QuestionWidget({
           <p>{question.description}</p>
 
           <AlternativesForm
-          onSubmit={(infosDoEvento) => {
-            infosDoEvento.preventDefault();
-            setIsQuestionSubmited(true);
-            setTimeout(() => {
-              addResult(isCorrect);
-              onSubmit();
-              setIsQuestionSubmited(false);
-              setSelectedAlternative(undefined);
-            }, 3 * 1000);
-          }}
-        >
+            onSubmit={(infosDoEvento) => {
+              infosDoEvento.preventDefault();
+              setIsQuestionSubmited(true);
+              setTimeout(() => {
+                addResult(isCorrect);
+                onSubmit();
+                setIsQuestionSubmited(false);
+                setSelectedAlternative(undefined);
+              }, 3 * 1000);
+            }}
+          >
             {question.alternatives.map((alternative, alternativeIndex) => {
                 const alternativeID = `alternative__${alternativeIndex}`;
-                
+                const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
+                const isSelected = selectedAlternative === alternativeIndex;
                 return (
                   <Widget.Topic 
                     as="label"
                     key={alternativeID}
                     htmlFor={alternativeID}
+                    data-selected={isSelected}
+                    data-status={isQuestionSubmited && alternativeStatus}
                   >
                     <input 
                       id={alternativeID} 
@@ -169,7 +198,7 @@ export default function PageQuiz() {
 
         { screenState === screenStates.LOADING && <LoadingWidget /> }
 
-        { screenState === screenStates.RESULT && <div>Terminou</div> }
+        { screenState === screenStates.RESULT && <ResultWidget results={results} /> }
         
         <Footer />
       </QuizContainer>
